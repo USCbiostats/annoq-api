@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+
+    
+    
+
+<html lang="en-us">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page title -->
+    <title></title>
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+
+    <!-- Bootstrap JavaScript if it is in head -->
+    
+        <script crossorigin="anonymous" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+    
+
+</head>
+
+<body>
+
+
+        <header>
+                <div class="navbar navbar-dark bg-dark box-shadow">
+                    <div class="container d-flex justify-content-between">
+                    <a href="/" class="navbar-brand d-flex align-items-center">
+                        <strong>IMAGE annotation</strong>
+                    </a>
+                    </div>
+                </div>
+        </header>
+        
+
+
+    
+
+
+
+    
+<main role="main">
+        <section class="jumbotron text-center">
+                <div class="container">
+                  <h1 class="jumbotron-heading">Welcome to IMAGE project annotation database</h1>
+                  <p class="lead text-muted">Here you can find all of the documents and links related to IMAGE project's annotation datasets</p>
+                </div>
+        </section>
+        <div>
+            <h2>Sample VCF file for GUI VCF query:</h2> <a href="/static/main/sample.vcf">download </a>
+        </div>
+</main>
+<style>
+.centered {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 8px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+.item {
+    
+    font-size: 2em;
+    color: #444;
+    font-weight: bold;
+
+}
+</style>
+
+    <div class="footer navbar-fixed-bottom" style="background-color:#212529;">
+        <p class="container-fluid" align="center"> 
+          <img src="/static/main/img/image_logo.gif" style="height:80px" alt="USC IMAGE logo">
+        </p>
+    </div>
+
+
+
+<!-- Bootstrap JavaScript if it is in body -->
+
+
+
+
+</body>
+
+</html>
