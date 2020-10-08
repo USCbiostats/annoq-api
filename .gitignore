@@ -127,8 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-# data
-data/*
-es/
-tmp/
-setup_es.py
