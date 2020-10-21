@@ -9,6 +9,7 @@ import requests
 import config
 from setup_es import *
 from utils import *
+import json
 
 #SITE_NAME = 'http://localhost:9200/'
 #es = Elasticsearch(hosts=["127.0.0.1:9200"], timeout=5000)
@@ -23,13 +24,17 @@ def get_mapping(idx='vs-index'):
     return fields
 '''
 '''
-@app.route('/<idx>/anno_tree')
-def get_anno_tree(idx):
+@app.route('/anno_tree')
+def get_anno_tree():
     #stct = structure_mapping(get_mapping(idx=idx))
     #tree_dic = dict_to_tree(stct)
     #return jsonify({"header_tree_array": init_tree_list()}) #[tree_dic[i].get_dic() for i in sorted(tree_dic.keys())]})
-    return jsonify({"header_tree_array": tree_list}) #[tree_dic[i].get_dic() for i in sorted(tree_dic.keys())]})
+   
+   
+    #return jsonify({"header_tree_array": tree_list}) #[tree_dic[i].get_dic() for i in sorted(tree_dic.keys())]})
 
+    with open('data/anno_tree_tmp.json') as f:
+        return  json.load(f)
 
 @app.route('/<idx>/structure')
 def show_idx_str(idx):
@@ -90,13 +95,13 @@ def proxy(path):
     global SITE_NAME
     #print(request.get_json())
     if request.method=='GET':
-        resp = requests.get(f'{SITE_NAME}{path}', auth=es_auth)
+        resp = requests.get(f'{SITE_NAME}{path}')
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in  resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
         return response
     elif request.method=='POST':
-        resp = requests.post(f'{SITE_NAME}{path}',json=request.get_json(), auth=es_auth)
+        resp = requests.post(f'{SITE_NAME}{path}',json=request.get_json())
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
