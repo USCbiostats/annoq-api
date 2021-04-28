@@ -4,7 +4,7 @@ host = 'http://pantherdb.org'
 gene_mapping_api = '/services/oai/pantherdb/geneinfo'
 params = {"geneInputList":"ABCA1", "organism":9606}
 
-def load_chromosomal_location(dfile='./data/others/Homo_sapiens.chromosomal_location_20180114'):
+def load_chromosomal_location(dfile='./data/others/Homo_sapiens.chromosome_location_hg19'):
     dic = {}
     for i in open(dfile):
         line = i.rstrip().split('\t')
@@ -24,6 +24,6 @@ def map_gene(k):
 def get_pos_from_gene_id(gid, chromosomal_location_dic):
     return chromosomal_location_dic.get(gid ,None)
 
-chromosomal_location_dic = load_chromosomal_location('./data/others/Homo_sapiens.chromosomal_location_20180114')
+chromosomal_location_dic = load_chromosomal_location('./data/others/Homo_sapiens.chromosome_location_hg19')
 
 #print(get_pos_from_gene_id(map_gene("ABCA1"), chromosomal_location_dic))

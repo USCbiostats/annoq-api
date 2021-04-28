@@ -1,6 +1,6 @@
 import config
 
-def query_vcf(es, body, output, index='vs-index'):
+def query_vcf(es, body, output, index='annoq-test'):
     count = 0
     ids = body.get('ids',[])
     source = body.get('_source',[])
@@ -20,7 +20,7 @@ def query_vcf(es, body, output, index='vs-index'):
     return page
 
 
-def query_to_file(es, body, output, error_output, index='vs-index'):
+def query_to_file(es, body, output, error_output, index='annoq-test'):
     count = 0
     col_names = body.get('_source',None)
     if not col_names:

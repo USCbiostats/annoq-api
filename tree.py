@@ -116,7 +116,7 @@ def init_tree_list():
     root = Annotation_tree_node(parent_id=None)
     node_li = [root]
     all_mapping = es.indices.get_mapping()
-    mapping = all_mapping['vs-index']['mappings']['properties']
+    mapping = all_mapping['annoq-test']['mappings']['properties']
     fields = [i for i in mapping]
     dic_fields = make_mapping_dic_tree(fields)
     dic_to_tree(dic_fields, parent_id, node_li, info)

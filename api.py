@@ -17,7 +17,7 @@ app = Flask(__name__)
 CORS(app)
 tree_list = init_tree_list()
 
-def get_mapping(idx='vs-index'):
+def get_mapping(idx='annoq-test'):
     all_mapping = es.indices.get_mapping()
     mapping = all_mapping[idx]['mappings']['properties']
     fields = [i for i in mapping]

@@ -1,3 +1,3 @@
 . host.sh
 
-curl "$host/vs-index/structure"
+curl "$host/annoq-test/structure"

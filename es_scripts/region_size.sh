@@ -1,6 +1,6 @@
 . host.sh
 
-curl -XPOST "$host/vs-index/_search?pretty" \
+curl -XPOST "$host/annoq-test/_search?pretty" \
 -H 'Content-Type: application/json' \
 -d '{
 "query": { 
