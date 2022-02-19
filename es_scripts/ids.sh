@@ -1,13 +1,13 @@
 . host.sh
 
-curl -XPOST "$host/vs-index/ids" \
+curl -XPOST "$host/annoq-test/ids" \
 -H 'Content-Type: application/json' \
 -d '{
   "_source":["pos", "ref"],
   "ids":["18:10636A>C", "18:10644C>G", "18:10667C>T", "18:10719C>G"]
 }'
 
-curl -XPOST "$host/vs-index/ids" \
+curl -XPOST "$host/annoq-test/ids" \
 -H 'Content-Type: application/json' \
 -d '{
   "_source":["pos", "ref"],

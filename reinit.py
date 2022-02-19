@@ -14,8 +14,8 @@ es = Elasticsearch(
 )
 es = Elasticsearch(hosts=["127.0.0.1:9200"], timeout=5000)
 #delete old one
-es.indices.delete(index='vs-index', ignore=[404])
+es.indices.delete(index='annoq-test', ignore=[404])
 #create and load mapping
-es.indices.create(index='vs-index')
+es.indices.create(index='annoq-test')
 mapping = json.load(open("./es_scripts/vs_index_mapping.json"))
-es.indices.put_mapping(index = 'vs-index', body=mapping )
+es.indices.put_mapping(index = 'annoq-test', body=mapping )

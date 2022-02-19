@@ -1,3 +1,3 @@
 . host.sh
 
-curl "$host/vs-index/anno_tree"
+curl "$host/annoq-test/anno_tree"

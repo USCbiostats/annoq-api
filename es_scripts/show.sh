@@ -1,3 +1,3 @@
 . host.sh
 
-curl $host/vs-index/_search?pretty=true&q=*:*
+curl $host/annoq-test/_search?pretty=true&q=*:*
