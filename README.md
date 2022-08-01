@@ -60,3 +60,20 @@ e.g.
 
 * response.hits.total.value is total result number
 * response.hits.hits is data
+
+
+## For Developers
+
+Open New Screen 
+
+`cd home/elastic/config`
+
+`docker-compose up`
+
+Open New Screen 
+
+`cd home/mushayah/annoq-api-dev`
+
+`python3 api.py`
+
+
