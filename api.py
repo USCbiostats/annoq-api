@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-from flask import Flask,request,redirect,Response,jsonify, send_from_directory, abort
+from flask import Flask,request,Response,jsonify, send_from_directory, abort
 from flask_cors import CORS
 from tree import *
 from gene_pos import *
@@ -11,30 +11,22 @@ from setup_es import *
 from utils import *
 import json
 
-#SITE_NAME = 'http://localhost:9200/'
-#es = Elasticsearch(hosts=["127.0.0.1:9200"], timeout=5000)
+
 app = Flask(__name__)
 CORS(app)
-tree_list = init_tree_list()
 
 def get_mapping(idx='annoq-test'):
     all_mapping = es.indices.get_mapping()
     mapping = all_mapping[idx]['mappings']['properties']
     fields = [i for i in mapping]
     return fields
-'''
-'''
+
+
 @app.route('/anno_tree')
 def get_anno_tree():
-    #stct = structure_mapping(get_mapping(idx=idx))
-    #tree_dic = dict_to_tree(stct)
-    #return jsonify({"header_tree_array": init_tree_list()}) #[tree_dic[i].get_dic() for i in sorted(tree_dic.keys())]})
-   
-   
-    #return jsonify({"header_tree_array": tree_list}) #[tree_dic[i].get_dic() for i in sorted(tree_dic.keys())]})
 
-    with open('data/anno_tree_tmp.json') as f:
-        return  json.load(f)
+    with open('data/anno_tree.json') as f:
+        return  { 'result': json.load(f)}
 
 @app.route('/<idx>/structure')
 def show_idx_str(idx):
@@ -97,7 +89,7 @@ def proxy(path):
     if request.method=='GET':
         resp = requests.get(f'{SITE_NAME}{path}')
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-        headers = [(name, value) for (name, value) in  resp.raw.headers.items() if name.lower() not in excluded_headers]
+        headers = [(name, value) for (name, value) in resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
         return response
     elif request.method=='POST':
@@ -108,5 +100,5 @@ def proxy(path):
         return response
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0',debug = True,port=3403)
+    app.run(host = '127.0.0.1',debug = True,port=3403)
 
