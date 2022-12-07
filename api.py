@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-from flask import Flask,request,redirect,Response,jsonify, send_from_directory, abort
+from flask import Flask,request,Response,jsonify, send_from_directory, abort
 from flask_cors import CORS
 from tree import *
 from gene_pos import *
@@ -11,8 +11,6 @@ from setup_es import *
 from utils import *
 import json
 
-#SITE_NAME = 'http://localhost:9200/'
-#es = Elasticsearch(hosts=["127.0.0.1:9200"], timeout=5000)
 
 app = Flask(__name__)
 CORS(app)
@@ -22,8 +20,8 @@ def get_mapping(idx='annoq-test'):
     mapping = all_mapping[idx]['mappings']['properties']
     fields = [i for i in mapping]
     return fields
-'''
-'''
+
+
 @app.route('/anno_tree')
 def get_anno_tree():
 
@@ -91,7 +89,7 @@ def proxy(path):
     if request.method=='GET':
         resp = requests.get(f'{SITE_NAME}{path}')
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
-        headers = [(name, value) for (name, value) in  resp.raw.headers.items() if name.lower() not in excluded_headers]
+        headers = [(name, value) for (name, value) in resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
         return response
     elif request.method=='POST':
