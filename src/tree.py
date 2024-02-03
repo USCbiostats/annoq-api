@@ -1,4 +1,5 @@
-from setup_es import *
+from src.config.es import es
+from src.config.settings import settings
 
 cats = {
     'Basic Info':['chr', 'pos', 'ref', 'alt', 'rs_dbSNP151'],
@@ -116,7 +117,7 @@ def init_tree_list():
     root = Annotation_tree_node(parent_id=None)
     node_li = [root]
     all_mapping = es.indices.get_mapping()
-    mapping = all_mapping['annoq-test']['mappings']['properties']
+    mapping = all_mapping[settings.ANNOQ_ANNOTATIONS_INDEX]['mappings']['properties']
     fields = [i for i in mapping]
     dic_fields = make_mapping_dic_tree(fields)
     dic_to_tree(dic_fields, parent_id, node_li, info)

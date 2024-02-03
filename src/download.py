@@ -1,6 +1,7 @@
-import config
+from src.config.settings import settings
 
-def query_vcf(es, body, output, index='annoq-test'):
+
+def query_vcf(es, body, output, index=settings.ANNOQ_ANNOTATIONS_INDEX):
     count = 0
     ids = body.get('ids',[])
     source = body.get('_source',[])
@@ -12,7 +13,7 @@ def query_vcf(es, body, output, index='annoq-test'):
                 id = i, ignore=404)
         if resp['found']:
             count += 1
-            if count > config.maxRes:break
+            if count > settings.DOWNLOAD_SIZE:break
             li = [str(resp['_source'].get(k, '.')) for k in source]
             output('\t'.join(li) + "\n")
             if len(page) < 50:
@@ -20,7 +21,7 @@ def query_vcf(es, body, output, index='annoq-test'):
     return page
 
 
-def query_to_file(es, body, output, error_output, index='annoq-test'):
+def query_to_file(es, body, output, error_output, index=settings.ANNOQ_ANNOTATIONS_INDEX):
     count = 0
     col_names = body.get('_source',None)
     if not col_names:
@@ -37,7 +38,7 @@ def query_to_file(es, body, output, error_output, index='annoq-test'):
     while len(resp['hits']['hits']):
                 for doc in resp['hits']['hits']:
                     count += 1
-                    if count > config.maxRes: 
+                    if count > settings.DOWNLOAD_SIZE: 
                         return
                     li = [str(doc['_source'].get(k, '.')) for k in col_names]
                     output('\t'.join(li) + "\n")

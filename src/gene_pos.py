@@ -26,4 +26,4 @@ def get_pos_from_gene_id(gid, chromosomal_location_dic):
 
 chromosomal_location_dic = load_chromosomal_location('./data/others/Homo_sapiens.chromosome_location_hg19')
 
-#print(get_pos_from_gene_id(map_gene("ABCA1"), chromosomal_location_dic))
+

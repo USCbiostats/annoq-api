@@ -1,25 +1,27 @@
-from elasticsearch import Elasticsearch
+import load_env
+import logging
 from flask import Flask,request,Response,jsonify, send_from_directory, abort
 from flask_cors import CORS
-from tree import *
-from gene_pos import *
-from download import *
+from src.config.es import es
+from src.gene_pos import map_gene, get_pos_from_gene_id, chromosomal_location_dic
+from src.download import query_vcf, query_to_file
 import uuid
 import requests
-import config
-from setup_es import *
-from utils import *
 import json
+from src.config.settings import settings
 
 
 app = Flask(__name__)
 CORS(app)
 
-def get_mapping(idx='annoq-test'):
-    all_mapping = es.indices.get_mapping()
-    mapping = all_mapping[idx]['mappings']['properties']
-    fields = [i for i in mapping]
-    return fields
+werkzeug_logger = logging.getLogger('werkzeug')
+file_handler = logging.FileHandler('access.log')
+file_handler.setLevel(logging.INFO) 
+werkzeug_logger.addHandler(file_handler)
+
+# Setup logger for your Flask app
+app.logger.addHandler(file_handler)
+app.logger.setLevel(logging.INFO)
 
 
 @app.route('/anno_tree')
@@ -28,17 +30,6 @@ def get_anno_tree():
     with open('data/anno_tree.json') as f:
         return  { 'result': json.load(f)}
 
-@app.route('/<idx>/structure')
-def show_idx_str(idx):
-    stct = get_mapping(idx=idx)
-    return jsonify(stct)
-
-'''
-@app.route('/<idx>/vcf', methods=['POST'])
-def vcf_intersect(idx):
-    req_json = request.get_json()
-    ids = [vcf_to_id(i.encode('utf8')) for i in req_json['params']['uploadList']['ids'].split('\n') if i.encode("utf-8")[:1] != '#']
-'''
 
 @app.route('/gene')
 def search_gene_pos():
@@ -52,9 +43,10 @@ def search_gene_pos():
         gene_info['end'] = gene_pos[2]
     return jsonify({'gene_info':gene_info})
 
+
 @app.route('/download/<folder>/<name>', methods=['GET'])
 def download_file(folder, name):
-    if not folder in config.DOWNLOAD_DIR: 
+    if not folder in settings.DOWNLOAD_DIR: 
         abort(400)
     return send_from_directory(folder, name, as_attachment=True)
 
@@ -65,7 +57,7 @@ def get_download_url():
     if body.get('_source'):
         query['_source'] = body['_source']
     filename = str(uuid.uuid4()) + '.txt'
-    f = open(config.DOWNLOAD_DIR + '/' + filename, 'w')
+    f = open(settings.DOWNLOAD_DIR + '/' + filename, 'w')
     query_to_file(es, query, f.write, f.write)
     return jsonify({"url": "/download/" + 'tmp/' + filename})
 
@@ -75,7 +67,7 @@ def mget(idx):
     ids = body.get('ids')
     source = body.get('_source')
     filename = str(uuid.uuid4()) + '.txt'
-    f = open(config.DOWNLOAD_DIR + '/' + filename, 'w')
+    f = open(settings.DOWNLOAD_DIR + '/' + filename, 'w')
     if (not ids) or (not source):
         abort(404)
     hits = {"hits":query_vcf(es, {"ids":ids, "_source":source}, f.write)}
@@ -87,18 +79,20 @@ def proxy(path):
     global SITE_NAME
     #print(request.get_json())
     if request.method=='GET':
-        resp = requests.get(f'{SITE_NAME}{path}')
+        resp = requests.get(f'{settings.ES_SITE_NAME}{path}')
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
         return response
     elif request.method=='POST':
-        resp = requests.post(f'{SITE_NAME}{path}',json=request.get_json())
+        resp = requests.post(f'{settings.ES_SITE_NAME}{path}',json=request.get_json())
         excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
         headers = [(name, value) for (name, value) in resp.raw.headers.items() if name.lower() not in excluded_headers]
         response = Response(resp.content, resp.status_code, headers)
         return response
 
 if __name__ == '__main__':
-    app.run(host = '127.0.0.1',debug = True,port=9350)
+    
+    print(settings.API_URL, settings.API_PORT)
+    app.run(host = settings.API_URL,port=settings.API_PORT, debug = settings.DEBUG)
 
