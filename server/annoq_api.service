@@ -1,0 +1,10 @@
+[Unit]
+Description=AnnoQ Server (api)
+After=network.target
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash /usr/local/bin/run_annoq_api.sh
+Type=simple
+Restart=always
+
