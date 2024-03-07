@@ -1,6 +1,6 @@
 . host.sh
 
-curl -XPOST "$host/annoq-test/_search?pretty" \
+curl -XPOST "$host/annoq-annotations-v2/_search?pretty" \
 -H 'Content-Type: application/json' \
 -d '{
 "query": { 

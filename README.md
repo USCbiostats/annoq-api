@@ -4,8 +4,7 @@
 
 ```
 pip3 install -r requirements.txt
-sh scripts/run.sh
-
+python3 api.py 
 ```
 
 For errors check logs in `./log`.
@@ -13,14 +12,6 @@ For errors check logs in `./log`.
 Port and IP configures are in `api.py`.
 
 Elasticsearch name and passwd in `setup_es.py`.
-
-## landing pages
-
-Static landing pages are in `static_pages/html/`
-
-## bash scripts demo:
-
-in es_scripts
 
 e.g.
 `cd es_scripts`
@@ -60,20 +51,3 @@ e.g.
 
 * response.hits.total.value is total result number
 * response.hits.hits is data
-
-
-## For Developers
-
-Open New Screen 
-
-`cd home/elastic/config`
-
-`docker-compose up`
-
-Open New Screen 
-
-`cd home/mushayah/annoq-api-dev`
-
-`python3 api.py`
-
-

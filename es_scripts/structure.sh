@@ -1,3 +1,3 @@
 . host.sh
 
-curl "$host/annoq-test/structure"
+curl "$host/annoq-annotations-v2/structure"

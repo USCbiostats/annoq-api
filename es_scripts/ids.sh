@@ -1,13 +1,13 @@
 . host.sh
 
-curl -XPOST "$host/annoq-test/ids" \
+curl -XPOST "$host/annoq-annotations-v2/ids" \
 -H 'Content-Type: application/json' \
 -d '{
   "_source":["pos", "ref"],
   "ids":["18:10636A>C", "18:10644C>G", "18:10667C>T", "18:10719C>G"]
 }'
 
-curl -XPOST "$host/annoq-test/ids" \
+curl -XPOST "$host/annoq-annotations-v2/ids" \
 -H 'Content-Type: application/json' \
 -d '{
   "_source":["pos", "ref"],

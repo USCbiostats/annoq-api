@@ -1,3 +1,3 @@
 . host.sh
 
-curl "$host/annoq-test/anno_tree"
+curl "$host/annoq-annotations-v2/anno_tree"

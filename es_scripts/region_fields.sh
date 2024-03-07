@@ -1,6 +1,6 @@
 . host.sh
 
-curl -XPOST "$host/annoq-test/_search?pretty" \
+curl -XPOST "$host/annoq-annotations-v2/_search?pretty" \
 -H 'Content-Type: application/json' \
 -d '{
 "_source": ["ANNOVAR_ensembl_GO_biological_process_complete_list_id","pos"],
