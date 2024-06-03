@@ -216,6 +216,20 @@
     "value_type": "term_id"
   },
   {
+    "id": "626",
+    "parent_id": "7",
+    "leaf": true,
+    "name": "enhancer_linked_PANTHER_protein_class_list_id",
+    "label": "PEREGRINE_enhancer_linked_PANTHER_protein_class_list_id",
+    "detail": "When the variant is located in an enhancer region, the PANTHER Protein Class annotations of its target genes inferred from the enhancer-gene links in the PEREGRINE project are populated here. Only the Panther Protein Class IDs are displayed here.",
+    "link": "https://www.peregrineproj.org/",
+    "pmid": "33320871",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "22",
     "parent_id": "7",
     "leaf": true,
@@ -294,6 +308,53 @@
     "keyword_searchable": true
   },
   {
+    "id": "36",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_Gene_ID",
+    "detail": "Ensembl gene IDs corresponding to transcripts. Multiple IDs are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID. The gene IDs can be the same for different transcript IDs.",
+    "root_url": "http://uswest.ensembl.org/Homo_sapiens/Gene/Summary?g=",
+    "sample_url": "http://uswest.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000158270",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "37",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_HGVSc",
+    "detail": "variant in format of HGVSc. Multiple annotations are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID.",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "38",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_HGVSp",
+    "detail": "variant in format of HGVSp. Multiple annotations are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID.",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "49",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_Transcript_ID",
+    "detail": "Ensembl transcript IDs corresponding to consequences.\\nMultiple IDs are separated by \"|\"",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "50",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_summary",
+    "detail": "ANNOVAR consequence summary with Ensembl as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
     "id": "31",
     "parent_id": "26",
     "leaf": true,
@@ -325,35 +386,6 @@
     "field_type": "text",
     "keyword_searchable": true,
     "value_type": "term_id"
-  },
-  {
-    "id": "36",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_Gene_ID",
-    "detail": "Ensembl gene IDs corresponding to transcripts. Multiple IDs are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID. The gene IDs can be the same for different transcript IDs.",
-    "root_url": "http://uswest.ensembl.org/Homo_sapiens/Gene/Summary?g=",
-    "sample_url": "http://uswest.ensembl.org/Homo_sapiens/Gene/Summary?g=ENSG00000158270",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "37",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_HGVSc",
-    "detail": "variant in format of HGVSc. Multiple annotations are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID.",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "38",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_HGVSp",
-    "detail": "variant in format of HGVSp. Multiple annotations are separated by \"|\". The order corresponds to ANNOVAR_ensembl_Transcript_ID.",
-    "field_type": "text",
-    "keyword_searchable": true
   },
   {
     "id": "40",
@@ -389,6 +421,17 @@
     "value_type": "term_id"
   },
   {
+    "id": "627",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_ensembl_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to ANNOVAR_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "46",
     "parent_id": "26",
     "leaf": true,
@@ -407,24 +450,6 @@
     "field_type": "text",
     "keyword_searchable": true,
     "value_type": "term_id"
-  },
-  {
-    "id": "49",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_Transcript_ID",
-    "detail": "Ensembl transcript IDs corresponding to consequences.\\nMultiple IDs are separated by \"|\"",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "50",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_summary",
-    "detail": "ANNOVAR consequence summary with Ensembl as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
-    "field_type": "text",
-    "keyword_searchable": true
   },
   {
     "id": "51",
@@ -450,6 +475,53 @@
     "leaf": true,
     "name": "ANNOVAR_refseq_Exon_Rank",
     "detail": "exon number the variant locates (if applicable)\\nMultiple annotations are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "60",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_Gene_ID",
+    "detail": "RefSeq gene IDs corresponding to transcripts.\\nMultiple IDs are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "61",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_HGVSc",
+    "detail": "variant in format of HGVSc.\\nMultiple annotations are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "62",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_HGVSp",
+    "detail": "variant in format of HGVSp.\\nMultiple annotations are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "73",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_Transcript_ID",
+    "detail": "RefSeq transcript IDs corresponding to consequences.\\nMultiple IDs are separated by \"|\"",
+    "root_url": "https://www.ncbi.nlm.nih.gov/nuccore/",
+    "sample_url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_130386",
+    "field_type": "text",
+    "keyword_searchable": true
+  },
+  {
+    "id": "74",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_summary",
+    "detail": "ANNOVAR consequence summary with RefSeq as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
     "field_type": "text",
     "keyword_searchable": true
   },
@@ -487,33 +559,6 @@
     "value_type": "term_id"
   },
   {
-    "id": "60",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_Gene_ID",
-    "detail": "RefSeq gene IDs corresponding to transcripts.\\nMultiple IDs are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "61",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_HGVSc",
-    "detail": "variant in format of HGVSc.\\nMultiple annotations are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "62",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_HGVSp",
-    "detail": "variant in format of HGVSp.\\nMultiple annotations are separated by \"|\" The order corresponds to ANNOVAR_refseq_Transcript_ID\\nThe order corresponds to ANNOVAR_refseq_Transcript_ID",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
     "id": "64",
     "parent_id": "26",
     "leaf": true,
@@ -547,6 +592,17 @@
     "value_type": "term_id"
   },
   {
+    "id": "628",
+    "parent_id": "26",
+    "leaf": true,
+    "name": "ANNOVAR_refseq_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to ANNOVAR_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "70",
     "parent_id": "26",
     "leaf": true,
@@ -565,26 +621,6 @@
     "field_type": "text",
     "keyword_searchable": true,
     "value_type": "term_id"
-  },
-  {
-    "id": "73",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_Transcript_ID",
-    "detail": "RefSeq transcript IDs corresponding to consequences.\\nMultiple IDs are separated by \"|\"",
-    "root_url": "https://www.ncbi.nlm.nih.gov/nuccore/",
-    "sample_url": "https://www.ncbi.nlm.nih.gov/nuccore/NM_130386",
-    "field_type": "text",
-    "keyword_searchable": true
-  },
-  {
-    "id": "74",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_summary",
-    "detail": "ANNOVAR consequence summary with RefSeq as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
-    "field_type": "text",
-    "keyword_searchable": true
   },
   {
     "id": "75",
@@ -725,6 +761,17 @@
     "value_type": "term_id"
   },
   {
+    "id": "632",
+    "parent_id": "83",
+    "leaf": true,
+    "name": "flanking_0_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 0 flanking region.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "97",
     "parent_id": "83",
     "leaf": true,
@@ -811,6 +858,17 @@
     "value_type": "term_id"
   },
   {
+    "id": "633",
+    "parent_id": "83",
+    "leaf": true,
+    "name": "flanking_10000_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 10000 flanking region.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "113",
     "parent_id": "83",
     "leaf": true,
@@ -892,6 +950,17 @@
     "name": "flanking_20000_PANTHER_GO_SLIM_molecular_function_list_id",
     "detail": "The PANTHER GO slim molecular function ID list queried through PANTHER API for the gene(s) when the variant is within the gene region plus 20k flanking regions on either end.",
     "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "634",
+    "parent_id": "83",
+    "leaf": true,
+    "name": "flanking_20000_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 20000 flanking region.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
     "value_type": "term_id"
@@ -989,39 +1058,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "142",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_GO_biological_process_complete_list_id",
-    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "144",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_GO_cellular_component_complete_list_id",
-    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "146",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_GO_molecular_function_complete_list_id",
-    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "147",
     "parent_id": "132",
     "leaf": true,
@@ -1096,49 +1132,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "156",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id",
-    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "158",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id",
-    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "160",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id",
-    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "162",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_PANTHER_pathway_list_id",
-    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "163",
     "parent_id": "132",
     "leaf": true,
@@ -1155,16 +1148,6 @@
     "detail": "protein position as to a transcript.\\nMultiple annotations are separated by \"|\" The order corresponds to VEP_ensembl_Transcript_ID\\nThe order corresponds to VEP_ensembl_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "166",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_REACTOME_pathway_list_id",
-    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "167",
@@ -1210,6 +1193,103 @@
     "detail": "VEP consequence summary with Ensembl as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
     "field_type": "text",
     "keyword_searchable": true
+  },
+  {
+    "id": "142",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_GO_biological_process_complete_list_id",
+    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "144",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_GO_cellular_component_complete_list_id",
+    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "146",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_GO_molecular_function_complete_list_id",
+    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "156",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_PANTHER_GO_SLIM_biological_process_list_id",
+    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "158",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_PANTHER_GO_SLIM_cellular_component_list_id",
+    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "160",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_PANTHER_GO_SLIM_molecular_function_list_id",
+    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "641",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "162",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_PANTHER_pathway_list_id",
+    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "166",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_ensembl_REACTOME_pathway_list_id",
+    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
   },
   {
     "id": "172",
@@ -1264,39 +1344,6 @@
     "detail": "exon (intron) rank as to a transcript.\\nMultiple annotations are separated by \"|\" The order corresponds to VEP_refseq_Transcript_ID\\nThe order corresponds to VEP_refseq_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "179",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_GO_biological_process_complete_list_id",
-    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "181",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_GO_cellular_component_complete_list_id",
-    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "183",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_GO_molecular_function_complete_list_id",
-    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "184",
@@ -1371,49 +1418,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "193",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id",
-    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "195",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id",
-    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "197",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id",
-    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "199",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_PANTHER_pathway_list_id",
-    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "200",
     "parent_id": "132",
     "leaf": true,
@@ -1430,16 +1434,6 @@
     "detail": "protein position as to a transcript.\\nMultiple annotations are separated by \"|\" The order corresponds to VEP_refseq_Transcript_ID\\nThe order corresponds to VEP_refseq_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "203",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_REACTOME_pathway_list_id",
-    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "204",
@@ -1478,6 +1472,103 @@
     "detail": "VEP consequence summary with RefSeq as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
     "field_type": "text",
     "keyword_searchable": true
+  },
+  {
+    "id": "179",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_GO_biological_process_complete_list_id",
+    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "181",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_GO_cellular_component_complete_list_id",
+    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "183",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_GO_molecular_function_complete_list_id",
+    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "193",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_PANTHER_GO_SLIM_biological_process_list_id",
+    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "195",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_PANTHER_GO_SLIM_cellular_component_list_id",
+    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "197",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_PANTHER_GO_SLIM_molecular_function_list_id",
+    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "642",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class  ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "199",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_PANTHER_pathway_list_id",
+    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "203",
+    "parent_id": "132",
+    "leaf": true,
+    "name": "VEP_refseq_REACTOME_pathway_list_id",
+    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
   },
   {
     "id": "209",
@@ -1523,39 +1614,6 @@
     "detail": "exon (intron) rank and total number as to a transcript.\\nFormat exon or intron rank / total exon or intron number Multiple annotations are separated by \"|\" The order corresponds to SnpEff_ensembl_Transcript_ID\\nexon or intron rank / total exon or intron number\\nMultiple annotations are separated by \"|\"\\nThe order corresponds to SnpEff_ensembl_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "215",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_GO_biological_process_complete_list_id",
-    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "217",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_GO_cellular_component_complete_list_id",
-    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "219",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_GO_molecular_function_complete_list_id",
-    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "220",
@@ -1641,49 +1699,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "230",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id",
-    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "232",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id",
-    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "234",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id",
-    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "236",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_PANTHER_pathway_list_id",
-    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "237",
     "parent_id": "208",
     "leaf": true,
@@ -1691,16 +1706,6 @@
     "detail": "protein position and length as to a transcript.\\nFormat protein position/protein length Multiple annotations are separated by \"|\" The order corresponds to SnpEff_ensembl_Transcript_ID\\nprotein position/protein length\\nMultiple annotations are separated by \"|\"\\nThe order corresponds to SnpEff_ensembl_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "239",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_REACTOME_pathway_list_id",
-    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "240",
@@ -1793,6 +1798,103 @@
     "keyword_searchable": true
   },
   {
+    "id": "215",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_GO_biological_process_complete_list_id",
+    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "217",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_GO_cellular_component_complete_list_id",
+    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "219",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_GO_molecular_function_complete_list_id",
+    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "230",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_biological_process_list_id",
+    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "232",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_cellular_component_list_id",
+    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "234",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_PANTHER_GO_SLIM_molecular_function_list_id",
+    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "646",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_PANTHER_protein_class_list_id\t",
+    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "236",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_PANTHER_pathway_list_id",
+    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "239",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_ensembl_REACTOME_pathway_list_id",
+    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
     "id": "250",
     "parent_id": "208",
     "leaf": true,
@@ -1836,39 +1938,6 @@
     "detail": "exon (intron) rank and total number as to a transcript.\\nFormat exon or intron rank / total exon or intron number Multiple annotations are separated by \"|\" The order corresponds to SnpEff_refseq_Transcript_ID\\nexon or intron rank / total exon or intron number\\nMultiple annotations are separated by \"|\"\\nThe order corresponds to SnpEff_refseq_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "256",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_GO_biological_process_complete_list_id",
-    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "258",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_GO_cellular_component_complete_list_id",
-    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "260",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_GO_molecular_function_complete_list_id",
-    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "261",
@@ -1952,49 +2021,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "271",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id",
-    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "273",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id",
-    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "275",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id",
-    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "root_url": "http://amigo.geneontology.org/amigo/term/",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "277",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_PANTHER_pathway_list_id",
-    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "278",
     "parent_id": "208",
     "leaf": true,
@@ -2002,16 +2028,6 @@
     "detail": "protein position and length as to a transcript.\\nFormat protein position/protein length Multiple annotations are separated by \"|\" The order corresponds to SnpEff_refseq_Transcript_ID\\nprotein position/protein length\\nMultiple annotations are separated by \"|\"\\nThe order corresponds to SnpEff_refseq_Transcript_ID",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "280",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_REACTOME_pathway_list_id",
-    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "281",
@@ -2077,6 +2093,103 @@
     "detail": "SnpEff consequence summary with RefSeq as gene model.\\nFormat GeneID(total number of transcripts):consequence#1(number of transcripts affected) consequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"\\nGeneID(total number of transcripts):consequence#1(number of transcripts affected)\\nconsequence#2(number of transcripts affected)... Multiple genes are separated by \"|\"",
     "field_type": "text",
     "keyword_searchable": true
+  },
+  {
+    "id": "256",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_GO_biological_process_complete_list_id",
+    "detail": "The complete GO biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "258",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_GO_cellular_component_complete_list_id",
+    "detail": "The complete GO cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "260",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_GO_molecular_function_complete_list_id",
+    "detail": "The complete GO molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "271",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_PANTHER_GO_SLIM_biological_process_list_id",
+    "detail": "The PANTHER GO Slim biological process ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "273",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_PANTHER_GO_SLIM_cellular_component_list_id",
+    "detail": "The PANTHER GO Slim cellular component ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "275",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_PANTHER_GO_SLIM_molecular_function_list_id",
+    "detail": "The PANTHER GO Slim molecular function ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of GO IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "root_url": "http://amigo.geneontology.org/amigo/term/",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "647",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_PANTHER_protein_class_list_id",
+    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
+    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "277",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_PANTHER_pathway_list_id",
+    "detail": "The PANTHER pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Pathway IDs from all genes are shown here. The order of the IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
+  },
+  {
+    "id": "280",
+    "parent_id": "208",
+    "leaf": true,
+    "name": "SnpEff_refseq_REACTOME_pathway_list_id",
+    "detail": "The REACTOME Pathway ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of REACTOME Pathway IDs from all genes are shown here. The order of the GO IDs corresponds to that of the terms in the term column.",
+    "field_type": "text",
+    "keyword_searchable": true,
+    "value_type": "term_id"
   },
   {
     "id": "289",
@@ -4913,42 +5026,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "626",
-    "parent_id": "7",
-    "leaf": true,
-    "name": "enhancer_linked_PANTHER_protein_class_list_id",
-    "label": "PEREGRINE_enhancer_linked_PANTHER_protein_class_list_id",
-    "detail": "When the variant is located in an enhancer region, the PANTHER Protein Class annotations of its target genes inferred from the enhancer-gene links in the PEREGRINE project are populated here. Only the Panther Protein Class IDs are displayed here.",
-    "link": "https://www.peregrineproj.org/",
-    "pmid": "33320871",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "627",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_ensembl_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to ANNOVAR_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "628",
-    "parent_id": "26",
-    "leaf": true,
-    "name": "ANNOVAR_refseq_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to ANNOVAR_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "629",
     "parent_id": "26",
     "leaf": true,
@@ -4977,39 +5054,6 @@
     "root_url": "http://www.uniprot.org/uniprot/",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "632",
-    "parent_id": "83",
-    "leaf": true,
-    "name": "flanking_0_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 0 flanking region.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "633",
-    "parent_id": "83",
-    "leaf": true,
-    "name": "flanking_10000_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 10000 flanking region.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "634",
-    "parent_id": "83",
-    "leaf": true,
-    "name": "flanking_20000_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class list queried through PANTHER API for the gene(s) when the variant is within the gene region with 20000 flanking region.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "635",
@@ -5072,28 +5116,6 @@
     "keyword_searchable": true
   },
   {
-    "id": "641",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_ensembl_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to VEP_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "642",
-    "parent_id": "132",
-    "leaf": true,
-    "name": "VEP_refseq_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class  ID list queried through PANTHER API for IDs corresponding to VEP_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
     "id": "643",
     "parent_id": "132",
     "leaf": true,
@@ -5122,28 +5144,6 @@
     "root_url": "http://www.uniprot.org/uniprot/",
     "field_type": "text",
     "keyword_searchable": true
-  },
-  {
-    "id": "646",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_ensembl_PANTHER_protein_class_list_id\t",
-    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to SnpEff_ensembl_Gene_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
-  },
-  {
-    "id": "647",
-    "parent_id": "208",
-    "leaf": true,
-    "name": "SnpEff_refseq_PANTHER_protein_class_list_id",
-    "detail": "The PANTHER Protein Class ID list queried through PANTHER API for IDs corresponding to SnpEff_refseq_Transcript_ID column. If there are more than one gene ID, a non-redundant list of PANTHER Protein Class  IDs from all genes are shown here. The order of the PANTHER Protein Class IDs corresponds to that of the terms in the term column.",
-    "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
-    "field_type": "text",
-    "keyword_searchable": true,
-    "value_type": "term_id"
   },
   {
     "id": "648",
