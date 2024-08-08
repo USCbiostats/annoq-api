@@ -22,17 +22,19 @@
     "detail": "Pre-computed ANNOVAR annotations for all alternative SNVs based on human reference genome hg19",
     "link": "http://annovar.openbioinformatics.org/en/latest/user-guide/download/",
     "pmid": "20601685",
-    "sort": 2.0
+    "sort": 2.0,
+    "version": "6/7/2020 23:56"
   },
   {
     "id": "208",
     "parent_id": "0",
     "leaf": false,
     "name": "SnpEff",
-    "detail": "AnpEff is a program for annotating and predicting the effects of single nucleotide polymorphisms",
+    "detail": "SnpEff is a program for annotating and predicting the effects of single nucleotide polymorphisms",
     "link": "http://pcingola.github.io/SnpEff/",
     "pmid": "22728672",
-    "sort": 3.0
+    "sort": 3.0,
+    "version": "4.3t"
   },
   {
     "id": "132",
@@ -42,7 +44,8 @@
     "detail": "Variant Effect Predictor (VEP) is developed by Ensembl and it determines the effect of the variants (SNPs, insertions, deletions, CNVs or structural variants) on genes, transcripts, and protein sequence, as well as regulatory regions. ",
     "link": "https://uswest.ensembl.org/info/docs/tools/vep/index.html",
     "pmid": "27268795",
-    "sort": 4.0
+    "sort": 4.0,
+    "version": "ensembl-vep-release-107"
   },
   {
     "id": "83",
@@ -53,7 +56,8 @@
     "detail": "Functional annotation of a variant through PANTHER API.",
     "link": "https://pantherdb.org",
     "pmid": "33290554",
-    "sort": 5.0
+    "sort": 5.0,
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "7",
@@ -64,7 +68,8 @@
     "detail": "When the variant is located in an enhancer region, the functions of its target gene inferred from the enhancer-gene links in the PEREGRINE project The ontology terms are annotated here.",
     "link": "https://www.peregrineproj.org/",
     "pmid": "33320871",
-    "sort": 6.0
+    "sort": 6.0,
+    "version": "Initial Release"
   },
   {
     "id": "288",
@@ -82,7 +87,8 @@
     "id": "495",
     "parent_id": "0",
     "leaf": false,
-    "name": "others"
+    "name": "others",
+    "version": "dbNSFP v4.3c"
   },
   {
     "id": "2",
@@ -91,7 +97,8 @@
     "name": "chr",
     "detail": "Chromosome number of the variant.",
     "field_type": "text",
-    "keyword_searchable": true
+    "keyword_searchable": true,
+    "version": "HRC.r1-1"
   },
   {
     "id": "3",
@@ -99,7 +106,8 @@
     "leaf": true,
     "name": "pos",
     "detail": "Position of the variant.",
-    "field_type": "long"
+    "field_type": "long",
+    "version": "HRC.r1-1"
   },
   {
     "id": "4",
@@ -108,7 +116,8 @@
     "name": "ref",
     "detail": "The reference base of the variant.",
     "field_type": "text",
-    "keyword_searchable": true
+    "keyword_searchable": true,
+    "version": "HRC.r1-1"
   },
   {
     "id": "5",
@@ -117,7 +126,8 @@
     "name": "alt",
     "detail": "The alternative allele of the variant.",
     "field_type": "text",
-    "keyword_searchable": true
+    "keyword_searchable": true,
+    "version": "HRC.r1-1"
   },
   {
     "id": "6",
@@ -129,7 +139,8 @@
     "root_url": "https://www.ncbi.nlm.nih.gov/snp/",
     "sample_url": "https://www.ncbi.nlm.nih.gov/snp/rs6883035",
     "field_type": "text",
-    "keyword_searchable": true
+    "keyword_searchable": true,
+    "version": "HRC.r1-1"
   },
   {
     "id": "9",
@@ -143,7 +154,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "11",
@@ -157,7 +169,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "13",
@@ -171,7 +184,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "15",
@@ -185,7 +199,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "17",
@@ -199,7 +214,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "19",
@@ -213,7 +229,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "626",
@@ -227,7 +244,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "20",
@@ -241,7 +259,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "22",
@@ -255,7 +274,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "23",
@@ -379,7 +399,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "33",
@@ -391,7 +412,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "35",
@@ -403,7 +425,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "40",
@@ -415,7 +438,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "42",
@@ -427,7 +451,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "44",
@@ -439,7 +464,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "627",
@@ -451,7 +477,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "46",
@@ -463,7 +490,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "48",
@@ -475,7 +503,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "51",
@@ -561,7 +590,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "57",
@@ -573,7 +603,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "59",
@@ -585,7 +616,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "64",
@@ -597,7 +629,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "66",
@@ -609,7 +642,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "68",
@@ -621,7 +655,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "628",
@@ -633,7 +668,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "70",
@@ -645,7 +681,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "72",
@@ -657,7 +694,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "75",
@@ -741,7 +779,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "87",
@@ -753,7 +792,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "89",
@@ -765,7 +805,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "91",
@@ -777,7 +818,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "93",
@@ -789,7 +831,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "95",
@@ -801,7 +844,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "632",
@@ -813,7 +857,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "97",
@@ -825,7 +870,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "99",
@@ -837,7 +883,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "101",
@@ -849,7 +896,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "103",
@@ -861,7 +909,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "105",
@@ -873,7 +922,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "107",
@@ -885,7 +935,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "109",
@@ -897,7 +948,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "111",
@@ -909,7 +961,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "633",
@@ -921,7 +974,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "113",
@@ -933,7 +987,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "115",
@@ -945,7 +1000,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "117",
@@ -957,7 +1013,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "119",
@@ -969,7 +1026,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "121",
@@ -981,7 +1039,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "123",
@@ -993,7 +1052,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "125",
@@ -1005,7 +1065,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "127",
@@ -1017,7 +1078,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "634",
@@ -1029,7 +1091,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "129",
@@ -1041,7 +1104,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "131",
@@ -1053,7 +1117,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "133",
@@ -1274,7 +1339,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "144",
@@ -1286,7 +1352,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "146",
@@ -1298,7 +1365,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "156",
@@ -1310,7 +1378,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "158",
@@ -1322,7 +1391,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "160",
@@ -1334,7 +1404,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "641",
@@ -1346,7 +1417,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "162",
@@ -1358,7 +1430,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "166",
@@ -1370,7 +1443,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "172",
@@ -1564,7 +1638,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "181",
@@ -1576,7 +1651,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "183",
@@ -1588,7 +1664,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "193",
@@ -1600,7 +1677,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "195",
@@ -1612,7 +1690,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "197",
@@ -1624,7 +1703,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "642",
@@ -1636,7 +1716,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "199",
@@ -1648,7 +1729,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "203",
@@ -1660,7 +1742,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "209",
@@ -1899,7 +1982,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "217",
@@ -1911,7 +1995,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "219",
@@ -1923,7 +2008,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "230",
@@ -1935,7 +2021,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "232",
@@ -1947,7 +2034,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "234",
@@ -1959,7 +2047,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "646",
@@ -1971,7 +2060,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "236",
@@ -1983,7 +2073,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "239",
@@ -1995,7 +2086,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "250",
@@ -2207,7 +2299,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "258",
@@ -2219,7 +2312,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "260",
@@ -2231,7 +2325,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO database released 2024-01-17, DOI: 10.5281/zenodo.10536401"
   },
   {
     "id": "271",
@@ -2243,7 +2338,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "273",
@@ -2255,7 +2351,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "275",
@@ -2267,7 +2364,8 @@
     "root_url": "http://amigo.geneontology.org/amigo/term/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "GO release 2023-07-25, released 2023-08-01"
   },
   {
     "id": "647",
@@ -2279,7 +2377,8 @@
     "root_url": "https://pantherdb.org/panther/category.do?categoryAcc=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "277",
@@ -2291,7 +2390,8 @@
     "root_url": "https://pantherdb.org/pathway/pathwayDiagram.jsp?catAccession=",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "PANTHER UPL 18"
   },
   {
     "id": "280",
@@ -2303,7 +2403,8 @@
     "root_url": "https://reactome.org/PathwayBrowser/#/",
     "field_type": "text",
     "keyword_searchable": true,
-    "value_type": "term_id"
+    "value_type": "term_id",
+    "version": "Reactome database version 85, released 2023-05-25"
   },
   {
     "id": "289",
@@ -2313,7 +2414,8 @@
     "label": "The 1000 Genome Project Phase 3 (1000Gp3)",
     "detail": "Allele frequency data catalogued by the whole 1000 genomes phase 3 (1000Gp3) data",
     "link": "https://www.internationalgenome.org/1000-genomes-summary",
-    "pmid": "26432245"
+    "pmid": "26432245",
+    "version": "The 1000 genome project phase 3 (1000Gp3) - release/20130502/ "
   },
   {
     "id": "302",
@@ -2321,7 +2423,8 @@
     "leaf": false,
     "name": "ESP6500",
     "detail": "Exome allele frequencies from the Exome Sequencing Project ESP6500SI-V2 release",
-    "link": "http://evs.gs.washington.edu/EVS/"
+    "link": "http://evs.gs.washington.edu/EVS/",
+    "version": "ESP6500SI-V2 release"
   },
   {
     "id": "309",
@@ -2329,7 +2432,8 @@
     "leaf": false,
     "name": "ExAC",
     "detail": "Exome allele frequencies from the Exome Aggregation Consortium release 0.3",
-    "link": "http://exac.broadinstitute.org/"
+    "link": "http://exac.broadinstitute.org/",
+    "version": "Exome allele frequencies from the Exome Aggregation Consortium release 0.3"
   },
   {
     "id": "326",
@@ -2337,7 +2441,8 @@
     "leaf": false,
     "name": "UK10K",
     "detail": "Total allele count in called genotypes in UK10K cohort.",
-    "link": "https://www.uk10k.org/studies/cohorts.html"
+    "link": "https://www.uk10k.org/studies/cohorts.html",
+    "version": "UK10K_COHORT.20140722"
   },
   {
     "id": "330",
@@ -2346,7 +2451,8 @@
     "name": "gnomAD",
     "detail": "Exome and whole genome allele frequencies from the Genome Aggregation Database (123,136 exomes and 15,496 whole genomes)",
     "link": "http://gnomad.broadinstitute.org/",
-    "pmid": "32461654"
+    "pmid": "32461654",
+    "version": "r2.1.1 exomes and  v3.1 genomes"
   },
   {
     "id": "290",
@@ -3778,7 +3884,8 @@
     "name": "clinvar",
     "detail": "DNA variants related to human diseases/phenotypes",
     "link": "https://www.ncbi.nlm.nih.gov/clinvar/",
-    "pmid": "31777943"
+    "pmid": "31777943",
+    "version": "4/25/2022"
   },
   {
     "id": "480",
@@ -3787,7 +3894,8 @@
     "name": "COSMIC",
     "detail": "Catalogue Of Somatic Mutations In Cancer--Somatic coding variants discovered in cancer",
     "link": "https://cancer.sanger.ac.uk/cosmic/",
-    "pmid": "30371878"
+    "pmid": "30371878",
+    "version": "v90"
   },
   {
     "id": "483",
@@ -3795,7 +3903,8 @@
     "leaf": false,
     "name": "GWAS_catalog",
     "detail": "DNA variants associated with human diseases/phenotypes discovered in GWAS Catalogue.",
-    "link": "https://www.genome.gov/gwastudies/"
+    "link": "https://www.genome.gov/gwastudies/",
+    "version": "e105_r2022-04-07"
   },
   {
     "id": "488",
