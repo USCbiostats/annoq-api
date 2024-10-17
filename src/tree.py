@@ -2,7 +2,7 @@ from src.config.es import es
 from src.config.settings import settings
 
 cats = {
-    'Basic Info':['chr', 'pos', 'ref', 'alt', 'rs_dbSNP151'],
+    'Basic Info':['chr', 'pos', 'ref', 'alt', 'rs_dbSNP'],
     'IMAGE Enhancer Linked Functional Annotations':[],
     'ANNOVAR':[], 
     'AnnoQ Functional Annotations':[],
@@ -22,8 +22,8 @@ cats = {
         "GRASP2":[]        #GRAP
         
     },
-    "others":[]
-    
+    "others":[],
+    "HG19 Info":[]
 }
 
 class Annotation_tree_node:
